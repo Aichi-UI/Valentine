@@ -55,15 +55,6 @@
       0% { transform: translateY(0); opacity:1; }
       100% { transform: translateY(-500px); opacity:0; }
     }
-
-    /* GIF butterflies */
-    .butterfly {
-      position: absolute;
-      width: 50px;
-      height: 50px;
-      animation: fly linear infinite;
-      z-index: 5; /* behind buttons */
-    }
   </style>
 </head>
 
@@ -73,20 +64,6 @@
 
 <button id="yes" onclick="yesClicked()">Yes 💖</button>
 <button id="no" onmouseover="moveButton()">No 🙈</button>
-
-<!-- Butterflies using GIF -->
-<div class="butterfly" style="left:10%; top:20%; animation-duration:12s;">
-  <img src="butterfly.gif" alt="butterfly">
-</div>
-<div class="butterfly" style="left:70%; top:30%; animation-duration:15s;">
-  <img src="butterfly.gif" alt="butterfly">
-</div>
-<div class="butterfly" style="left:50%; top:60%; animation-duration:18s;">
-  <img src="butterfly.gif" alt="butterfly">
-</div>
-<div class="butterfly" style="left:30%; top:80%; animation-duration:20s;">
-  <img src="butterfly.gif" alt="butterfly">
-</div>
 
 <script>
 function moveButton() {
